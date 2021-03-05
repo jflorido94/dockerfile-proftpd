@@ -1,4 +1,4 @@
-nanFROM debian:stretch-slim
+FROM debian:stretch-slim
 
 MAINTAINER jflorido94
 
