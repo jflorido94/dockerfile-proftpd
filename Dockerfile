@@ -25,4 +25,4 @@ COPY resource /aux
 
 RUN chmod -R 777 /aux
 
-ENTRYPOINT ["/aux/execute.sh"]
+RUN /aux/execute.sh
