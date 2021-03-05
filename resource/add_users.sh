@@ -12,7 +12,7 @@ if [ -n "$FTPD_USERS_LIST" ]; then
 		# useradd --shell /bin/sh ${USERADD_OPTIONS} -d /home/$ftp_login --password $CRYPTED_PASSWORD $ftp_login
 		
 
-		echo $ftp_pass | ftpasswd --stdin --passwd --uid=30 --name ftp_login --home /datos/$ftp_login --shell /bin/false
+		echo $ftp_pass | ftpasswd --stdin --passwd --uid=30 --gid=30 --name ftp_login --home /datos/$ftp_login --shell /bin/false
 		
 		# chown -R $ftp_login:$ftp_login /datos/$ftp_login
 	done
