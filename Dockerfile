@@ -18,7 +18,6 @@ RUN apt-get update && \
 	  apt-get install -y proftpd && \
 	  apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    mkdir /srv/ftp &&\
     mkdir /datos
 
 COPY resource/proftpd.conf /etc/proftpd/proftpd.conf
