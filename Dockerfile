@@ -28,4 +28,4 @@ RUN chmod -R 777 /aux
 
 RUN /aux/execute.sh
 
-RUN proftpd -n
+RUN service proftpd start
