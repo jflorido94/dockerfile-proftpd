@@ -28,4 +28,6 @@ RUN chmod -R 777 /aux
 
 RUN /aux/execute.sh
 
+VOLUME /datos /srv/ftp
+
 RUN service proftpd start
