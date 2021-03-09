@@ -12,8 +12,8 @@ ENV PROFTPD_SERVER_NAME="Proftpd Debian" \
     FTPD_USERS_LIST="user:password"
 
 # Expose ports
-# EXPOSE ${PROFTD_FTP_PORT} 
-# EXPOSE ${PROFTPD_PASSIVE_PORTS}
+EXPOSE ${PROFTD_FTP_PORT} 
+EXPOSE ${PROFTPD_PASSIVE_PORTS}
 
 RUN apt-get update && \
 	  apt-get install -y proftpd && \
