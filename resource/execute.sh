@@ -5,5 +5,3 @@
 
 # Ejecutar aux3.sh
 . /aux/change_conf.sh
-
-service proftpd start
