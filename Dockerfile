@@ -28,4 +28,4 @@ RUN chmod -R 777 /aux
 
 RUN /aux/execute.sh
 
-ENTRYPOINT service proftpd start
+CMD service proftpd start
